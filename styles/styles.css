@@ -1,7 +1,13 @@
 :root {
     --text-alignment: center;
-    --border-standard-black: 1px dotted black;
+    --border-standard-black: 1px solid black;
     --height-standard-size: auto;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: 10px;
 }
 
 nav {
@@ -25,10 +31,11 @@ main img {
     border: var(--border-standard-black);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
-    padding: 0px;
+    padding: 0;
 }
 
 main {
@@ -45,6 +52,11 @@ aside {
     text-align: var(--text-alignment);
 }
 
+aside h2 {
+    position: relative;
+    top: 40px;
+}
+
 aside img {
     width: 200px;
     height: var(--height-standard-size);
@@ -55,3 +67,14 @@ footer {
     border-top: var(--border-standard-black);
     text-align: var(--text-alignment);
 }
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: var(--border-standard-black);
+    background-color: white;
+    color: #333;
+}
+
